@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+section.qrcode{
+    display: block;
+    border: 60px solid white;
+    border-radius: 10px 10px;
+    transform: translate(-50%, -50%);
+}
