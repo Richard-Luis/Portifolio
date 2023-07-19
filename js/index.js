@@ -96,7 +96,7 @@ function scrollToPosition(to) {
   //   top: to,
   //   behavior: "smooth",
   // });
-  smoothScrollTo(0, to);
+  smoothScrollTo(30, to);
 }
 /**
  * Smooth scroll animation
