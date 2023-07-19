@@ -8,55 +8,54 @@
 </head>
 <body>
     
-    
-
-    <main class="container-principal">
-        <header>
-            <nav class="nav-bar">
-                <div class="nav-list">
-                    <ul>
-                        <li class="nav-item">
-                            <a class="link-nav" href="#home">Home</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="link-nav" href="#habilidades">Habilidades</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="link-nav" href="#sobre-mim">Sobre Mim</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="link-nav" href="#projetos">Projetos</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.png" alt="imagem hambrguer"></button>
-                </div>
-            </nav>
-    
-            <div class="mobile-menu">
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-list">
                 <ul>
                     <li class="nav-item">
                         <a class="link-nav" href="#home">Home</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="link-nav" href="#habilidades">Habilidades</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="link-nav" href="#sobre-mim">Sobre Mim</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="link-nav" href="#projetos">Projetos</a>
                     </li>
                 </ul>
             </div>
-        </header>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="imagens/menu_white_36dp.png" alt="imagem hambrguer"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item">
+                    <a class="link-nav" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="link-nav" href="#habilidades">Habilidades</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="link-nav" href="#sobre-mim">Sobre Mim</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="link-nav" href="#projetos">Projetos</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="container-principal">
         <section class="section-home" id="home">
             <div class="texto-home">
                 <p class="p-home1">Olá, Eu me Chamo</p>
@@ -64,10 +63,11 @@
                 <p class="p-home2">E sou Desenvolvedor Front-End</p>
 
                 <div class="container-redes">
-                    <a class="link-redes" href="https://github.com/Richard-Luis?tab=repositories" target="_blank"><button class="btn-redes">GitHub</button></a>
+                    <a href="https://github.com/Richard-Luis?tab=repositories" class="botao" target="_blank">Github</a>
 
-                    <a class="link-redes" href="https://www.linkedin.com/in/richard-pereira-43b167221/" target="_blank"><button class="btn-redes">Linkedin</button></a>
-                    <a class="link-redes" href="https://www.instagram.com/richar_d_pereira/" target="_blank"><button class="btn-redes">Instagram</button></a>
+                <a href="https://www.linkedin.com/in/richard-pereira-43b167221/" class="botao" target="_blank">Linkedin</a>
+
+                <a href="https://www.instagram.com/richar_d_pereira/" class="botao" target="_blank">Instagram</a>
                 </div>
             </div>
             <div class="imagem-animada">
@@ -87,7 +87,7 @@
             </div>
         </section>
         <section class="section-sobremim" id="sobre-mim">
-        <h1 class="h1-sobremim">Sobre Mim:</h1>
+        <h1 class="h1-sobremim">Sobre Mim</h1>
             <div class="container-psobremim">
                 <img class="img-eu" src="imagens/eu.jpg" alt="">
 
@@ -173,7 +173,7 @@
 
     <main class="main-mobile">
         
-        <div class="home-mobile">
+        <div class="home-mobile" id="home">
             <img class="img-eu-mobile" src="imagens/eu.jpg" alt="">
 
             <span class="span-apresentacao">
@@ -192,7 +192,7 @@
         
         
         
-            <div class="div-hab-mobile">
+            <div class="div-hab-mobile" id="habilidades">
                 <h1 class="h1-mobile-hab">Habilidades</h1>
                 <p class="p-hab-mobile">HTML: Linguagem de marcação utilizada para estruturar os elementos da página, como parágrafos, links, títulos, tabelas, imagens e até vídeos.</p>
                 <p class="p-hab-mobile">CSS: Linguagem de estilos utilizada para definir cores, fontes, tamanhos, posicionamento e qualquer outro valor estético para os elementos da página.</p>
@@ -203,17 +203,18 @@
         
                 </div>
             </div>
-            <div class="sobre-mim-mobile">
+            <div class="sobre-mim-mobile" id="sobre-mim">
                 <h1 class="h1-sobre-mim-mobile">
                     Sobre Mim
                 </h1>
-                <p class="sobre-mim-mobile">
+
+                <p class="psobre-mim-mobile">
                     Olá, tudo certo ?
                 </p>
-                <p class="sobre-mim-mobile">
+                <p class="psobre-mim-mobile">
                     Comecei a estudar desenvolvimento front-end ano passado e estou na transição de carreira, eu amo "Codar" e criar, quando falo que estudo nessa área muitos pensam que é pelo dinheiro, mas a verdade é que eu sou um entusiasta da tecnologia.
                 </p>
-                <p class="sobre-mim-mobile">
+                <p class="psobre-mim-mobile">
                     Eu tenho um ótimo conhecimento em HTML5, CSS3 e JavaScript, busco uma oportunidade de emprego, seja ela estágio, CLT ou PJ, sou realmente muito esforçado e dedicado, busco ser o melhor sempre, mas com humildade.
                 </p>
             </div>

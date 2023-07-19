@@ -19,7 +19,7 @@ function bounce(){
         dy = -dy
     }
     else{
-        dy += 0.2
+        dy += 0.1
     }
     y += dy
     ball.style.top = `${y}px`

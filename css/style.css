@@ -177,30 +177,26 @@ img.img-logo{
     align-items: center;
 }
 
-.link-redes{
-    margin: 8px;
-    animation: fadeIn .2s linear;
-}
-
-.btn-redes{
-    width: 200px;
-    height: 30px;
-    color: white;
-    background-color: var(--cor3);
+.botao {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
     border: 1px solid red;
-    border-radius: 7%;
+    border-radius: 4px;
     cursor: pointer;
-}
+  }
+  
+  .botao:hover {
+    background-color: #ddd;
+  }
 
 @keyframes fadeIn{
     0%{
         transform: scale(.7) translateY(50px);
     }
-}
-
-.img-redes{
-    width: 37px;
-    margin-top: 20px;
 }
 
 #p-home-nome{
@@ -418,9 +414,6 @@ li{
     margin-left:  200px;
 }
 
-    .btn-redes{
-    width: 100px;
-    }
     .container-redes{
         margin-left: 200px;
     }
@@ -443,12 +436,47 @@ li{
         justify-content: flex-end;
         align-items: flex-end;
     }
-    .btn-redes{
-        width: 100px;
+}
+
+@media screen and (max-width: 1090px){
+    .p-home1{
+        font-size: 1.5rem;
+    }
+    #p-home-nome{
+        font-size: 2rem;
+        margin-left: 190px;
+    }
+    .p-home2{
+        font-size: 1.5rem;
+        margin-left: 180px;
+    }
+    img.img-logo{
+        width: 250px;
+        margin: 71px 100px 10px -49px;
+    }
+    img.image-redonda{
+        margin: 60px;
     }
 }
 
+@media screen and (max-width:1145px){
+    .container-psobremim{
+        flex-direction: column;
+        margin: 10px;
+    }
+    .img-eu{
+        width: 200px;
+        margin-bottom: 50px;
+    }
+}
 
+@media screen and (max-width: 1000px){
+    .img-eu{
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
 
 
 
@@ -586,8 +614,12 @@ li{
         height: 50px;
         border-radius: 50%;
     }
+
+    .sobre-mim-mobile{
+        height: 63vh;
+    }
     
-    .p-hab-mobile, .sobre-mim-mobile{
+    .p-hab-mobile, .psobre-mim-mobile{
         color: white;
         font-size: 1rem;
         font-family: Arial, Helvetica, sans-serif;
