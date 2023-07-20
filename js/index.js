@@ -150,12 +150,12 @@ function smoothScrollTo(endX, endY, duration) {
 
         setInterval(function () {
             var angle = Date.now() * planetInfo.speed;
-            var radius = Math.min(container.offsetWidth, container.offsetHeight) / 200 - planetInfo.size / 2;
+            var radius = Math.min(container.offsetWidth, container.offsetHeight) / 200 - planetInfo.size / 1.5;
             var x = Math.cos(angle) * radius;
             var y = Math.sin(angle) * radius;
             planet.style.left = container.offsetWidth / 2 + x + "px";
-            planet.style.top = container.offsetHeight / 3 + y + "px";
-        }, 16);
+            planet.style.top = container.offsetHeight / 2 + y + "px";
+        },16);
     });
 }
 
@@ -169,3 +169,17 @@ function redimensionarSistemaSolar() {
 redimensionarSistemaSolar();
 
 window.addEventListener("resize", redimensionarSistemaSolar);
+
+const observar = new IntersectionObserver((entries) =>{
+    entries.forEach((entry) =>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        } else{
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+const elements = document.querySelectorAll('.hidden')
+
+elements.forEach((element) => observar.observe(element))
