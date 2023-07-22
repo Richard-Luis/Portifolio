@@ -354,7 +354,7 @@ div.imagem-habilidades{
 
 .section-sobremim{
     width: 100%;
-    height: 100vh;
+    height: 130vh;
 }
 
 .container-psobremim{
@@ -575,7 +575,7 @@ li{
     
     .texto-home{
         text-align: justify;
-        margin:10px 10px 1px 300px;
+        margin:10px 10px 1px 255px;
         
     }
     
@@ -694,6 +694,10 @@ li{
     
     .div-projeto{
         display: none;
+    }
+
+    .container-projetos{
+        margin-top: 40%;
     }
 
     .container-projetos-mobile{
