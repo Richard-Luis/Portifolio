@@ -107,7 +107,7 @@ header{
     }
     .mobile-menu .nav-item{
         padding-top: 0rem;
-        margin: 10px 31px 6px 138px;  
+        margin: 10px 0px 6px 1px;
     }
     
     .link-nav::after{
@@ -136,14 +136,13 @@ header{
 
     .mobile-menu ul{
         display: flex;
-        justify-content: center;
-        flex-direction:column;
+        justify-content: space-around;
         padding-bottom: 1rem;
     }
 
     .mobile-menu .nav-item{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         padding-top: 1.2rem;
     }
 
@@ -552,7 +551,8 @@ li{
     }
     .mobile-menu .nav-item{
         padding-top: 0rem;
-        margin: 10px 31px 6px 138px;  
+        margin: 10px 0px 6px 30px;
+         
     }
     
     .section-home{
